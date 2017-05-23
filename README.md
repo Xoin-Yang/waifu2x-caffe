@@ -3,35 +3,36 @@
 
  制作者 : lltcggie
 
-本ソフトは、画像変換ソフトウェア「[waifu2x](https://github.com/nagadomi/waifu2x)」の変換機能のみを、
-[Caffe](http://caffe.berkeleyvision.org/)を用いて書き直し、Windows向けにビルドしたソフトです。
-CPUで変換することも出来ますが、CUDA(あるいはcuDNN)を使うとCPUより高速に変換することが出来ます。
+这个是一款图像转换软件“[waifu2x]（https://github.com/nagadomi/waifu2x）”可以将图片接近的无损放大，
+[来自Caffe]使用了Windows中内置的（http://caffe.berkeleyvision.org/）。
+还可以将其由CPU进行转换，但使用CUDA（或cuDNN）时可以被转换比CPU更快。
 
-GUI supports English, Japanese, Simplified Chinese, Traditional Chinese, Korean, Turkish, and French.
+支持语言: English, Japanese, Simplified Chinese, Traditional Chinese, Korean, Turkish, and French.
 
-ソフトのダウンロードは[こちらのreleasesページ](https://github.com/lltcggie/waifu2x-caffe/releases)の「Downloads」の項で出来ます。
+软件可以在这里下载(https://github.com/lltcggie/waifu2x-caffe/releases)
 
 
- 要求環境
+ 要求环境
 ----------
 
-このソフトを動作させるには最低でも以下の環境が必要です。
+运行软件至少需要一下环境
 
- * OS : Windows Vista以降 64bit (32bit用exeはありません)
- * メモリ : 空きメモリ1GB以上 (ただし、変換する画像サイズによる)
- * GPU : Compute Capability 2.0 以上のNVIDIA製GPU(CPUで変換する場合は不要)
- * Visual C++ 2013 再頒布可能パッケージがインストールされていること(必須)
-    - 上記パッケージは[こちら](https://www.microsoft.com/ja-jp/download/details.aspx?id=40784)
-    - `ダウンロード` ボタンを押した後、`vcredist_x64.exe`を選択し、ダウンロード・インストールを行って下さい。
-    - 見つからない場合は、「Visual C++ 2013 再頒布可能パッケージ」で検索してみて下さい。
+ * 系统 : Windows Vista以上且必须是64bit系统(无法再32位系统上运行)
+ * 内存: 1GB以上内存 (图片太大可能需要更多内存)
+ * GPU : Compute Capability 2.0 以上或NVIDIA GPU(Cpu转换模式不要要)
+ * Visual C++ 2013开发环境(必须)
+    - VS C++ 2013 下载地址(https://www.microsoft.com/zh-CN/download/details.aspx?id=40784)
+    - 如果网页失效，自行在搜索引擎搜索下载
 
-cuDNNで変換する場合はさらに
+如果你想在cuDNN模式下惊醒转换
 
- * GPU : Compute Capability 3.0 以上のNVIDIA製GPU
+ * GPU : Compute Capability 3.0 以上或NVIDIA製GPU
 
-自分のGPUのCompute Capabilityが知りたい場合は[こちらのページ](https://developer.nvidia.com/cuda-gpus)で調べて下さい。
+这个页面也可查找你的显卡计算能力(https://developer.nvidia.com/cuda-gpus)
 
-
+--------------------------------------------------------------------------------------------------
+一下不做翻译，软件有中文语言，下载使用不难
+--------------------------------------------------------------------------------------------------
  cuDNNについて
 --------
 
